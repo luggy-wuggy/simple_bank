@@ -42,7 +42,7 @@ func (store *Store) execTx(ctx context.Context, fn func(*Queries) error) error {
 type TransferTxParams struct {
 	FromAccountId int64 `json:"from_account_id"`
 	ToAccountId   int64 `json:"to_account_id"`
-	Amount        int64 `json:"amount`
+	Amount        int64 `json:"amount"`
 }
 
 // TransferTxResult is the result of the transfer transaction
